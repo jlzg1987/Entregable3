@@ -4,6 +4,7 @@ const Categories =require('./categories.models')
 
 const initModels=()=>{
 
+    
     Users.hasMany(Tasks,{
         foreignKey: 'username_id'
     })

@@ -3,6 +3,7 @@ const { DataTypes } = require("sequelize");
 
 
 const Tasks = db.define("tasks", {
+    
     id: {
         type: DataTypes.INTEGER,
         primaryKey: true,

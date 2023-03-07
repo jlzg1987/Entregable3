@@ -1,9 +1,9 @@
 const {Router} = require('express');
-const { createUser } = require('../controlers/users.controlers');
+const { createtasks } = require('../controlers/tasks.controlers');
 
 const router = Router();
 
-router.post('/api/v1/tasks',createUser);
+router.post('/api/v1/tasks',createtasks);
 
 
 module.exports = router;

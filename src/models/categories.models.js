@@ -3,6 +3,7 @@ const { DataTypes } = require("sequelize");
 
 
 const Category = db.define("categories", {
+    
     id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
