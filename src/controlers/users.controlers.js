@@ -10,9 +10,20 @@ const createUser = async (req, res) => {
     } catch (error) {
       res.status(400).json(error);
     }
-
+    
   };
+
+  const getAlltasks = async(req,res)=>{
+    try {
+        const userTasksAll= await UsersServices.getAll()
+       
+        res.json(userTasksAll)
+    } catch (error) {
+        res.status(400).json(error)
+    }
+}
+
   module.exports = {
-    createUser,
+    createUser,getAlltasks,
 
   };
